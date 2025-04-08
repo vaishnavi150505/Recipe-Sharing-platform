@@ -1,7 +1,13 @@
 {
-  "name": "ninjachefs",
-  "version": "0.1.0",
+  "name": "edunet-rs",
+  "version": "1.0.0",
   "private": true,
+  "description": "Fullstack monorepo for Edunet(RS)",
+  "scripts": {
+    "dev": "concurrently \"npm start --prefix frontend\" \"npm run server --prefix backend\"",
+    "frontend": "npm start --prefix frontend",
+    "backend": "npm run server --prefix backend"
+  },
   "dependencies": {
     "@clerk/clerk-react": "^4.17.0",
     "@reduxjs/toolkit": "^1.8.2",
@@ -16,11 +22,11 @@
     "react-scripts": "5.0.1",
     "web-vitals": "^2.1.4"
   },
-  "scripts": {
-    "start": "react-scripts start",
-    "build": "react-scripts build",
-    "test": "react-scripts test",
-    "eject": "react-scripts eject"
+  "devDependencies": {
+    "@hookform/devtools": "^4.3.1",
+    "@tailwindcss/forms": "^0.5.7",
+    "tailwindcss": "^3.3.3",
+    "concurrently": "^8.0.1"
   },
   "eslintConfig": {
     "extends": [
@@ -39,10 +45,5 @@
       "last 1 firefox version",
       "last 1 safari version"
     ]
-  },
-  "devDependencies": {
-    "@hookform/devtools": "^4.3.1",
-    "@tailwindcss/forms": "^0.5.7",
-    "tailwindcss": "^3.3.3"
   }
 }

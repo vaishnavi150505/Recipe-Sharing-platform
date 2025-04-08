@@ -1,0 +1,14 @@
+{
+  "name": "edunet-rs",
+  "version": "1.0.0",
+  "private": true,
+  "description": "Fullstack monorepo for Edunet(RS)",
+  "scripts": {
+    "dev": "concurrently \"npm run frontend\" \"npm run backend\"",
+    "frontend": "npm start --prefix frontend",
+    "backend": "npm start --prefix backend"
+  },
+  "devDependencies": {
+    "concurrently": "^8.0.1"
+  }
+}
